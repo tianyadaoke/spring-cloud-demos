@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+feign:
+  client:
+    config:
+      default:
+        ConnectTimeout: 10000
+        readTimeout: 60000
+  circuitbreaker:
+    enabled: true

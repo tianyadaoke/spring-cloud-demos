@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: client-route
+#          uri: http://localhost:8082
+          uri: lb://client
+          predicates:
+            - Path=/client/**
+        - id: mobile-route
+#          uri: http://localhost:8082
+          uri: lb://mobile
+          predicates:
+            - Path=/mobile/**
+#      discovery:
+#        locator:
+#          enabled: true
+#          lower-case-service-id: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/

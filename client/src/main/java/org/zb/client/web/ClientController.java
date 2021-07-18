@@ -22,7 +22,6 @@ public class ClientController {
         log.info("get client mobile number ,try to call mobile service to check mobile exists");
         Boolean isValid = mobileService.checkMobile(mobile);
         if(isValid==true){
-            log.info("call remote mobile service success");
             return UUID.randomUUID().toString().substring(0,6);
         }
         return "mobile is already exists";

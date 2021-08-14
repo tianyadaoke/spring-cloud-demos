@@ -16,11 +16,15 @@ spring:
           uri: lb://mobile
           predicates:
             - Path=/mobile/**
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        cluster-name: HANGZHOU
 #      discovery:
 #        locator:
 #          enabled: true
 #          lower-case-service-id: true
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:9000/eureka/
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:9000/eureka/

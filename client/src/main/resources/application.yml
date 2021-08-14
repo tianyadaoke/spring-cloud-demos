@@ -3,10 +3,15 @@ server:
 spring:
   application:
     name: client
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:9000/eureka/
+  cloud:
+    nacos:
+      discovery:
+        cluster-name: HANGZHOU
+      server-addr: localhost:8848
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:9000/eureka/
 feign:
   client:
     config:

@@ -9,10 +9,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mobile" />
         <module name="client" />
-        <module name="eureka-sever" />
         <module name="gateway" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-sever" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

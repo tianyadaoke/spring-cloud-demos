@@ -18,5 +18,10 @@ feign:
       default:
         ConnectTimeout: 10000
         readTimeout: 60000
+#        loggerLevel: FULL
   circuitbreaker:
     enabled: true
+  httpclient:
+    enabled: true
+    max-connections: 200
+    max-connections-per-route: 50

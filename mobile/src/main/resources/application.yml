@@ -1,4 +1,5 @@
-
+pattern:
+  name: 本地环境Local
 #spring:
 #  application:
 #    name: mobile

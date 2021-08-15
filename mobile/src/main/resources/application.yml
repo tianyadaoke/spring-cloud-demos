@@ -1,14 +1,2 @@
 pattern:
   name: 本地环境Local
-#spring:
-#  application:
-#    name: mobile
-#  cloud:
-#    nacos:
-#      server-addr: localhost:8848
-#      discovery:
-#        cluster-name: HANGZHOU
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:9000/eureka/

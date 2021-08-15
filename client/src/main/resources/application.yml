@@ -5,20 +5,13 @@ spring:
     name: client
   cloud:
     nacos:
-      discovery:
-        cluster-name: HANGZHOU
       server-addr: localhost:8848
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:9000/eureka/
 feign:
   client:
     config:
       default:
         ConnectTimeout: 10000
         readTimeout: 60000
-#        loggerLevel: FULL
   circuitbreaker:
     enabled: true
   httpclient:

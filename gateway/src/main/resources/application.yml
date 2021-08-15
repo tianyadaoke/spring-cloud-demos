@@ -7,24 +7,22 @@ spring:
     gateway:
       routes:
         - id: client-route
-#          uri: http://localhost:8082
           uri: lb://client
+#          uri: http://localhost:8081
           predicates:
             - Path=/client/**
         - id: mobile-route
-#          uri: http://localhost:8082
           uri: lb://mobile
+#          uri: http://localhost:8082
           predicates:
             - Path=/mobile/**
+#          filters:
+#            - AddRequestHeader=Truth,talk is cheap
+      default-filters:
+        - AddRequestHeader=Truth,talk is cheap show me the code
+
     nacos:
       server-addr: localhost:8848
       discovery:
-        cluster-name: HANGZHOU
-#      discovery:
-#        locator:
-#          enabled: true
-#          lower-case-service-id: true
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:9000/eureka/
+        locator:
+          enabled: true

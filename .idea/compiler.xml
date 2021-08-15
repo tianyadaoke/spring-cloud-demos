@@ -14,12 +14,14 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-sever" target="11" />
+      <module name="feign-api" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="client" options="-parameters" />
       <module name="eureka-sever" options="-parameters" />
+      <module name="feign-api" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="mobile" options="-parameters" />
     </option>

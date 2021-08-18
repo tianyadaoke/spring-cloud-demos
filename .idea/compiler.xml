@@ -9,7 +9,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mobile" />
         <module name="client" />
+        <module name="publisher" />
         <module name="gateway" />
+        <module name="consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,10 +22,12 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="client" options="-parameters" />
+      <module name="consumer" options="-parameters" />
       <module name="eureka-sever" options="-parameters" />
       <module name="feign-api" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="mobile" options="-parameters" />
+      <module name="publisher" options="-parameters" />
     </option>
   </component>
 </project>

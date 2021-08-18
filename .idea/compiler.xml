@@ -10,6 +10,7 @@
         <module name="mobile" />
         <module name="client" />
         <module name="publisher" />
+        <module name="hotel-es-demo" />
         <module name="gateway" />
         <module name="consumer" />
       </profile>
@@ -26,6 +27,7 @@
       <module name="eureka-sever" options="-parameters" />
       <module name="feign-api" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="hotel-es-demo" options="-parameters" />
       <module name="mobile" options="-parameters" />
       <module name="publisher" options="-parameters" />
     </option>

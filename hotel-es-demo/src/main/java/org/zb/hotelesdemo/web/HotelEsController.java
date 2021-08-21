@@ -12,13 +12,15 @@ import org.zb.hotelesdemo.pojo.RequestParams;
 import org.zb.hotelesdemo.service.IHotelService;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
-public class HotelController {
+public class HotelEsController {
     @Autowired
     HotelRepository hotelRepository;
     @Autowired
     IHotelService hotelService;
+
     @GetMapping("/hotels")
     public List<Hotel> getAll(){
         return hotelRepository.findAll();
@@ -26,5 +28,9 @@ public class HotelController {
     @PostMapping("/list")
     public PageResult search(@RequestBody RequestParams params){
         return hotelService.search(params);
+    }
+    @PostMapping("/filters")
+    public Map<String,List<String>> getFilters(@RequestBody RequestParams params){
+        return hotelService.filters(params);
     }
 }

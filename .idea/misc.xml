@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/publisher/pom.xml" />
         <option value="$PROJECT_DIR$/consumer/pom.xml" />
         <option value="$PROJECT_DIR$/hotel-es-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/hotel-mysql/pom.xml" />
+        <option value="$PROJECT_DIR$/hotel-es/pom.xml" />
       </list>
     </option>
   </component>

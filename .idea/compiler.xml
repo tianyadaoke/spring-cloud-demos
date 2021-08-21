@@ -7,10 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hotel-es-demo" />
+        <module name="hotel-mysql" />
+        <module name="hotel-es" />
         <module name="mobile" />
         <module name="client" />
         <module name="publisher" />
-        <module name="hotel-es-demo" />
         <module name="gateway" />
         <module name="consumer" />
       </profile>
@@ -27,7 +29,9 @@
       <module name="eureka-sever" options="-parameters" />
       <module name="feign-api" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="hotel-es" options="-parameters" />
       <module name="hotel-es-demo" options="-parameters" />
+      <module name="hotel-mysql" options="-parameters" />
       <module name="mobile" options="-parameters" />
       <module name="publisher" options="-parameters" />
     </option>

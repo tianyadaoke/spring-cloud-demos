@@ -2,8 +2,13 @@ package org.zb.hoteles.pojo;
 
 import lombok.Data;
 
+import javax.persistence.*;
+
 @Data
+@Entity
+@Table(name = "tb_hotel")
 public class Hotel {
+    @Id
     private Long id;
     private String name;
     private String address;
